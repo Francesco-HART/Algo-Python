@@ -25,19 +25,23 @@ class StackArray:
         if len(self.stack) == 0:
             return None
         return self.stack[-1]
+    
+    def is_empty(self):
+        return True if len(self.stack) == 0 else False
 
 
 
-my_stack = StackArray(4)
-my_stack.push(3)
-my_stack.push(2)
-my_stack.push(1)
+if __name__ == "__main__":
+    my_stack = StackArray(4)
+    my_stack.push(3)
+    my_stack.push(2)
+    my_stack.push(1)
 
-print('Stack before pop():')
-my_stack.print_stack()
+    print('Stack before pop():')
+    my_stack.print_stack()
 
-print('\nPopped value:')
-print(my_stack.pop())
+    print('\nPopped value:')
+    print(my_stack.pop())
 
-print('\nStack after pop():')
-my_stack.print_stack()
+    print('\nStack after pop():')
+    my_stack.print_stack()
