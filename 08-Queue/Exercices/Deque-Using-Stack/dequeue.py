@@ -12,14 +12,7 @@ class MyQueue:
             
             
     def dequeue(self):
-        # Check if the queue is empty
-        if self.is_empty():
-            # Return None if the queue is empty
-            return None
-        else:
-            # Remove and return the last element in stack1
-            # which is the first element in the queue
-            return self.stack1.pop()
+        pass
 
     def peek(self):
         return self.stack1[-1]

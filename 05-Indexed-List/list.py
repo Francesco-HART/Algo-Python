@@ -8,53 +8,28 @@ class IndexedList:
             print(value)
 
     def append(self, value):
-        self.data.append(value)
-        self.length += 1
-        return True
+        pass
 
     def pop(self):
-        if self.length == 0:
-            return None
-        removed = self.data.pop()
-        self.length -= 1
-        return removed
+        pass
 
     def prepend(self, value):
-        self.data.insert(0, value)
-        self.length += 1
-        return True
+        pass
 
     def pop_first(self):
-        if self.length == 0:
-            return None
-        removed = self.data.pop(0)
-        self.length -= 1
-        return removed
+        pass
 
     def get(self, index):
-        if index < 0 or index >= self.length:
-            return None
-        return self.data[index]
+        pass
 
     def set_value(self, index, value):
-        if index < 0 or index >= self.length:
-            return False
-        self.data[index] = value
-        return True
+        pass
 
     def insert(self, index, value):
-        if index < 0 or index > self.length:
-            return False
-        self.data.insert(index, value)
-        self.length += 1
-        return True
+        pass
 
     def remove(self, index):
-        if index < 0 or index >= self.length:
-            return None
-        removed = self.data.pop(index)
-        self.length -= 1
-        return removed
+        pass
 
 
 # ------------------------------

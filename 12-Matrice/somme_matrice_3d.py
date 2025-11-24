@@ -10,19 +10,7 @@ def somme_matrice_3d(matrice):
         
     Complexité: O(n × m × p) où n, m, p sont les dimensions
     """
-    if not matrice:
-        return 0
-    
-    somme = 0
-    
-    for plan in matrice:
-        for ligne in plan:
-            for valeur in ligne:
-                somme += valeur
-    
-    return somme
-
-
+    pass
 
 # Exemples d'utilisation
 if __name__ == "__main__":

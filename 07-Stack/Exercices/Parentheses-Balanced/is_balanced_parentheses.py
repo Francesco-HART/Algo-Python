@@ -28,21 +28,8 @@ class Stack:
             return self.stack_list.pop()
             
             
-def is_balanced_parentheses(value):
-    stack = Stack()
-    
-    for i,v in enumerate(value):
-        if v == "(":
-            stack.push(v)
-        else:
-            popped = stack.pop()
-            if popped == None:
-                return False
-    
-    if stack.size() > 0:
-        return False
-                
-    return True
+#  is_balanced_parentheses
+
 
 
 

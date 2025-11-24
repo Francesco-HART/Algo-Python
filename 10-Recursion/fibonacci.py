@@ -11,7 +11,33 @@ print(fibonacci(6))  # Affiche 8
 import unittest
 
 """
-Tests unitaires pour la fonction fibonacci.
+On s’intéresse à une suite de nombres appelée suite de Fibonacci.
+Cette suite commence par deux valeurs fixes :
+
+F(0) = 0
+
+F(1) = 1
+
+F(n)=F(n−1)+F(n−2)
+
+Votre objectif est d’écrire une fonction qui :
+
+prend un entier n en entrée,
+
+renvoie le nᵉ terme de la suite de Fibonacci,
+
+utilise la récursion pour appliquer la définition mathématique.
+
+Vous devrez également afficher les premiers termes de la suite pour vérifier votre fonction.
+
+F(0) = 0
+F(1) = 1
+F(2) = 1
+F(3) = 2
+F(4) = 3
+F(5) = 5
+F(6) = 8
+F(7) = 13
 """
 
 class TestFibonacci(unittest.TestCase):

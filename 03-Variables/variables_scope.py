@@ -4,8 +4,7 @@ Exercices sur les variables locales et globales en Python.
 
 # Exercice 1 : Variables Locales
 def set_local():
-    y = 15
-    print(f"Variable locale y dans la fonction : {y}")
+    pass
 
 
 # Exercice 2 : Variables Globales
@@ -17,9 +16,7 @@ def modify_z():
     Fonction qui modifie la variable globale z à 50.
     Utilise le mot-clé global pour modifier la variable globale.
     """
-    global z
-    z = 50
-    print(f"Variable globale z modifiée dans la fonction : {z}")
+    pass
 
 
 if __name__ == "__main__":

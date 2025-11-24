@@ -20,21 +20,6 @@ class LinkedList:
             self.tail = new_node
         self.length += 1
         return True
-        
-    
-    def has_loop(self):
-        slow = self.head
-        fast = self.head
-        
-        while fast != None and fast.next != None:
-            fast = fast.next.next
-            slow = slow.next
-            
-            if fast == slow:
-                return True
-                
-        return False
-            
 
     # WRITE HAS_LOOP METHOD HERE #
     #                            #

@@ -3,19 +3,14 @@ Exercice 3 : Affichage des nombres de 1 à N avec une boucle for.
 """
 
 def afficher_1_a_n(n):
-    for nombre in range(1, n + 1):
-        print(nombre)
-
+    pass
 
 def obtenir_liste_1_a_n(n):
     return [nombre for nombre in range(1, n + 1)]
 
 
 def afficher_1_a_n_pairs_seulement(n):
-    for nombre in range(1, n + 1):
-        if nombre % 2 == 0:
-            print(nombre)
-
+    pass
 
 if __name__ == "__main__":
     print("=== Nombres de 1 à 10 ===")

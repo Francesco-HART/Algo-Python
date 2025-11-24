@@ -3,13 +3,11 @@ Exercice 2 : Affichage de fruits avec une boucle for.
 """
 
 def afficher_fruits(fruits):
-    for fruit in fruits:
-        print(fruit)
+    pass
 
 
 def afficher_fruits_numerotes(fruits):
-    for index, fruit in enumerate(fruits, start=1):
-        print(f"{index}. {fruit}")
+    pass
 
 
 def obtenir_fruits_liste():

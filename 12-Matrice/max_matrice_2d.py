@@ -11,17 +11,7 @@ def max_matrice_2d(matrice):
         
     Complexité: O(n × m) où n = nombre de lignes, m = nombre de colonnes
     """
-    if not matrice or not matrice[0]:
-        return None
-    
-    max_val = matrice[0][0]
-    
-    for ligne in matrice:
-        for valeur in ligne:
-            if valeur > max_val:
-                max_val = valeur
-    
-    return max_val
+    pass
 
 import unittest
 

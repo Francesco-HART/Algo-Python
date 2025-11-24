@@ -1,7 +1,5 @@
 def factorial(n):
-    if n == 1:
-        return 1
-    return n * factorial(n-1)
+    pass
 
 
 print(factorial(4))
@@ -10,6 +8,7 @@ import unittest
 
 """
 Tests unitaires pour la fonction factorial.
+4*3*2*1
 """
 
 

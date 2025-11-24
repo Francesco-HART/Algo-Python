@@ -1,13 +1,11 @@
 """
 Module pour calculer l'aire d'un rectangle.
 """
-
-def aire_rectangle(longueur, largeur):
-    return longueur * largeur
+# aire_rectangle L*l
 
 
-def perimetre_rectangle(longueur, largeur):
-    return 2 * (longueur + largeur)
+# perimetre_rectangle 2*(L+l)
+
 
 
 if __name__ == "__main__":

@@ -1,11 +1,9 @@
 """
-Afficher une liste
+Écrire une fonction qui parcourt et affiche tous les éléments d'une liste.
 """
 
 def print_items(n):
-    for i in range(n):
-        print(i)
-        
+    pass
         
 
 print_items(10)

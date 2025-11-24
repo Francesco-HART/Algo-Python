@@ -13,21 +13,7 @@ def coordonnees_minimum(matrice):
         - Au pire: O(n × m) - parcours complet
         - Au meilleur: O(1) - minimum en [0][0]
     """
-    if not matrice or not matrice[0]:
-        return None
-    
-    min_val = matrice[0][0]
-    min_ligne = 0
-    min_colonne = 0
-    
-    for i in range(len(matrice)):
-        for j in range(len(matrice[i])):
-            if matrice[i][j] < min_val:
-                min_val = matrice[i][j]
-                min_ligne = i
-                min_colonne = j
-    
-    return (min_ligne, min_colonne)
+    pass
 
 
 

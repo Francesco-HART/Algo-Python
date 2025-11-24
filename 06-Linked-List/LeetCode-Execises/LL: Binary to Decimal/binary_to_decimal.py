@@ -38,18 +38,6 @@ class LinkedList:
 
 
 
-    def binary_to_decimal(self):
-        current = self.head
-        decimal = 0
-        while current is not None:
-            decimal = (decimal * 2) + current.value 
-            
-            
-            current = current.next
-            
-        return decimal
-
-
 # Test case 1: Binary number 110 = Decimal number 6
 linked_list = LinkedList(1)
 linked_list.append(1)

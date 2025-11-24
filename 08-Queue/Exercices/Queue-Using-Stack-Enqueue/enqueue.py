@@ -4,21 +4,7 @@ class MyQueue:
         self.stack2 = []
         
     def enqueue(self, value):
-        # Move everything from stack1 to stack2
-        while self.stack1:               # tant que stack1 n'est pas vide
-            self.stack2.append(self.stack1.pop())
-    
-        self.stack1.append(value)
-    
-        while self.stack2:               # tant que stack2 n'est pas vide
-            self.stack1.append(self.stack2.pop())
-            
-    def peek(self):
-        return self.stack1[-1]
-
-    def is_empty(self):
-        return len(self.stack1) == 0
-        
+        pass
         
 
 # Create a new queue

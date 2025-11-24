@@ -22,27 +22,6 @@ class LinkedList:
         return True
   
 
-  
- 
-  
-def find_kth_from_end(ll, k):  
-    fast = ll.head
-    slow = ll.head
-    
-    if k <= 0:
-        return None
-        
-    for _ in range(k):
-        if fast == None:
-            return None
-        fast = fast.next
-        
-    
-    while fast != None:
-        slow = slow.next
-        fast = fast.next
-        
-    return slow
     #### WRITE FIND_KTH_FROM_END FUNCTION HERE ####
     #                                             #
     #    This is a SEPARATE FUNCTION that         #
