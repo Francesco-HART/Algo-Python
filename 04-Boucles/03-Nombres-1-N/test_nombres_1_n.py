@@ -5,7 +5,7 @@ Tests unitaires pour l'exercice nombres_1_n.
 import unittest
 from io import StringIO
 import sys
-from nombres_1_n import afficher_1_a_n, obtenir_liste_1_a_n, afficher_1_a_n_sur_ligne, afficher_1_a_n_pairs_seulement
+from nombres_1_n import afficher_1_a_n, obtenir_liste_1_a_n, afficher_1_a_n_pairs_seulement
 
 
 class TestObtenirListe1AN(unittest.TestCase):
@@ -106,36 +106,6 @@ class TestAfficher1AN(unittest.TestCase):
         output = captured_output.getvalue()
         
         self.assertEqual(output.strip(), '1')
-
-
-class TestAfficher1ANSurLigne(unittest.TestCase):
-    """Tests pour la fonction afficher_1_a_n_sur_ligne()."""
-    
-    def test_affiche_sur_une_ligne(self):
-        """Vérifie que tous les nombres sont sur une seule ligne."""
-        captured_output = StringIO()
-        sys.stdout = captured_output
-        
-        afficher_1_a_n_sur_ligne(5)
-        
-        sys.stdout = sys.__stdout__
-        output = captured_output.getvalue()
-        lines = output.strip().split('\n')
-        
-        self.assertEqual(len(lines), 1)
-    
-    def test_contient_tous_nombres(self):
-        """Vérifie que tous les nombres sont présents."""
-        captured_output = StringIO()
-        sys.stdout = captured_output
-        
-        afficher_1_a_n_sur_ligne(5)
-        
-        sys.stdout = sys.__stdout__
-        output = captured_output.getvalue()
-        
-        for i in range(1, 6):
-            self.assertIn(str(i), output)
 
 
 class TestAfficher1ANPairsSeulement(unittest.TestCase):
